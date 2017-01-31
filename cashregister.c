@@ -1,7 +1,6 @@
 // Bo Singh 028866135 sect i
 
 #include <stdio.h>
-#define GST 1.13 // Value for tax as a constant value
 int main() {
 
 	// Declare variables
@@ -10,23 +9,25 @@ int main() {
 	double loonies_owed;
 	double quarters_owed;
 	double dimes_owed;
-	double nickles_owed;
+	double nickels_owed;
 	double pennies_owed;
 	double balance;
-	
-	
-        int loonies, 
-	int quarters, 
-	int dimes, 
-	int nickels, 
+
+	float GST;
+	GST = 1.13;
+
+	int loonies;
+    int quarters;
+	int dimes;
+	int nickels;
 	int pennies;
-	
+
 	balance = amount_to_be_paid * GST;
-	
+
 	printf("Please enter the amount to be paid: $");
 	scanf("%lf", &amount_to_be_paid);
 	printf("GST: ", GST);
-	balance = amount__to_be_paid * GST;
+	balance = amount_to_be_paid * GST;
 	printf("Balance owing: %.2lf", balance);
 	loonies = balance;
 	loonies_owed = balance - loonies;
@@ -43,23 +44,5 @@ int main() {
 	printf("\nDimes required: %d, balance owing $%.2lf", dimes, dimes_owed);
 	printf("\nNickels required: %d, balance owing $%.2lf", nickels, nickels_owed);
 	printf("\nPennies required: %d, balance owing $%.2lf\n", pennies, pennies_owed);
-return 0;
+	return 0;
 }
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
