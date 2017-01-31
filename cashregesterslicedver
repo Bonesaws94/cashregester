@@ -1,0 +1,33 @@
+// Bo Singh 028866135 sect i
+
+#include <stdio.h>
+int main() {
+
+	// Declare variables
+
+	double amount_to_be_paid;
+	double loonies_owed;
+	double quarters_owed;
+	double balance;
+
+	float GST;
+	GST = 1.13;
+
+	int loonies;
+    int quarters;
+
+	balance = amount_to_be_paid * GST;
+
+	printf("Please enter the amount to be paid: $");
+	scanf("%lf", &amount_to_be_paid);
+	printf("GST: ", GST);
+	balance = amount_to_be_paid * GST;
+	printf("Balance owing: %.2lf", balance);
+	loonies = balance;
+	loonies_owed = balance - loonies;
+	quarters = loonies_owed / 0.25;
+	quarters_owed = loonies_owed - (quarters * 0.25);
+	printf("\nLoonies required: %d, balance owing $%.2lf", loonies, loonies_owed);
+	printf("\nQuarteres required: %d, balance owing $%.2lf", quarters, quarters_owed);
+	return 0;
+}
