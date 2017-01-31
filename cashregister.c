@@ -21,10 +21,10 @@ int main() {
 	int nickels, 
 	int pennies;
 	
-	balance = amount_paid * GST;
+	balance = amount_to_be_paid * GST;
 	
 	printf("Please enter the amount to be paid: $");
-	scanf("%lf", &amount_to_be_paid
+	scanf("%lf", &amount_to_be_paid);
 	printf("GST: ", GST);
 	balance = amount__to_be_paid * GST;
 	printf("Balance owing: %.2lf", balance);
